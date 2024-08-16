@@ -1,0 +1,293 @@
+*{
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+main{
+    width:100%;
+    height:100vh;
+    background-image: url("Images/bg.png");
+background-position: top  center;
+background-size: cover;
+
+}
+.navbar{
+    display:flex;
+    align-items: center;
+    position:absolute;
+    width:100%;
+    padding:0 64px;
+}
+.navbar-links{
+    display:flex;
+    justify-content: space-between;
+    gap:48px;
+    list-style-type: none;
+    margin-right: auto;
+    margin-left: 80px;
+    font-family: "Lusitana",serif;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 32px 24px;
+    cursor: pointer;
+    letter-spacing: -0.56px;
+}
+.navbar-links a{
+text-decoration: none;
+color: black;
+}
+.shopping-cart{
+    background-color: #FFF;
+    padding: 12px;
+    cursor: pointer;
+}
+.main-content{
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container{
+    background-color: #FFFCF8;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-container-box{
+    text-align: center;
+    padding: 96px 0;
+    margin: 96px 0;
+    
+}
+.main-title{
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    color:#CF8C0B;
+    font-size: 20px;
+}
+.main-name{
+    margin: 0;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-size: 96px;
+    max-width: 716px;
+    text-align: center;
+    font-style: normal;
+    letter-spacing: -0.56px;
+    line-height: 96px;
+}
+.main-name span{
+    font-weight: 700;
+
+}
+.main-details{
+    margin-top: 32px;
+    font-family: "Jost", serif;
+    font-weight: 400;
+    font-size:20px;
+    max-width: 706px;
+    text-align:center;
+}
+.main-button{
+    font-family: "Jost", serif;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 16px 32px;
+background: rgba(207, 140, 11, .1);
+border-style: none;
+border: solid 1px;
+border-color: #CF8C0B;
+margin-top:32px;
+cursor:pointer;
+transition: 0.3s ease;
+}
+.main-button:hover{
+    background: rgba(207, 140, 11, .3);
+}
+.order-button{
+    font-family: "Lusitana", serif;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 16px 32px;
+background: rgba(207, 140, 11, .2);
+border-style: none;
+margin-top:32px;
+cursor:pointer;
+letter-spacing: 1.6px;
+color: #CF8C0B;
+rotate:270deg;
+position:fixed;
+right:-70px;
+top:15%;
+
+}
+
+.about-title{
+    font-family: "Jost", serif;
+    font-weight: 400;
+    color:#CF8C0B;
+    font-size: 20px;
+  margin:0;
+}
+.about-name{
+    margin: 0;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    font-size: 96px;
+    letter-spacing: -3.5px;
+    display: inline-block;
+    position: relative;
+z-index: 1;
+}
+.about-name::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    bottom:25px;
+    background-color: #F9EFE0;
+    z-index: -1;
+  }
+
+.about-details{
+    max-width: 720px;
+    font-family: "Jost", serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+   margin: 24px 0 0 0;
+}
+.socials{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Jost", serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top:24px;
+}
+.socials .socials-line{
+    margin: 0 24px;
+}
+
+.socials p{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.socials-brands{
+    width:24px;
+    height: 24px;
+    cursor: pointer;
+    margin-right: 16px;
+}
+
+.menu{
+    display:flex;
+    background-color: #FFFCF8;
+    font-family: "Jost", serif;
+    font-weight: 400;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+
+.image-container{
+    background-color: #F9EFE0;
+    width:480px;
+    height: 450px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.item-container{
+    margin-left: 64px;
+}
+
+.item-name{
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    margin: 20px 0 0 0;
+    font-size: 24px;
+    letter-spacing: -0.56px;
+}
+.item-details {
+    font-family: "Jost", serif;
+    font-weight: 400;
+    font-size: 16px;
+    max-width: 480px;
+}
+
+.select{
+    font-family: "Jost", serif;
+    font-weight: 400;
+    background-color: #F9EFE0;
+    border-style: none;
+   padding: 8px 0;
+   padding-left: 24px;
+   width: 143px;
+   border-radius: 64px;
+   margin-right: 5px;
+}
+.selection{
+    display: flex;
+    width:480px;
+
+}
+.item-counter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+margin-right: auto;
+background-color: #F9EFE0;
+width:95px;
+border-radius: 64px;
+}
+.item-counter button{
+    border-style: none;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+.add-to-cart{
+    font-family: "Jost", serif;
+    font-weight: 500;
+    font-size: 18px;
+    border-style: none;
+    background-color: rgba(249, 239, 224, 1);
+    width:480px;
+    padding: 16px 0;
+    margin-top: 8px;
+    margin-bottom: 96px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.add-to-cart:hover{
+    background-color: rgb(228, 212, 188);;
+}
+.add-to-cart span{
+    color:#CF8C0B;
+}
+
+#itemNumber{
+    display:none;
+    position: absolute;
+    right:50px;
+    top: 10px;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: black;
+    padding:5px 10px;
+    border-radius: 64px;
+}
